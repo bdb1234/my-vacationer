@@ -3,6 +3,7 @@
   <!-- Ant may be ugly, but it's also cross-platform. -->
 
   <property name="build.dir" value="${basedir}/build" />
+  <property name="haus.dir" value="${basedir}/libs/haus" />
 
   <target name="clean">
     <delete dir="${build.dir}" />
@@ -11,12 +12,12 @@
   <target name="build">
     <mkdir dir="${build.dir}" />
     <java fork="true"
-          jar="${basedir}/closure/plovr.jar"
+          jar="${haus.dir}/libs/plovr/plovr.jar"
           failonerror="true"
           output="${build.dir}/server.js"
           error="${build.dir}/error.log">
       <arg value="build" />
-      <arg value="${basedir}/closure/config.js" />
+      <arg value="${basedir}/plovr-config.js" />
     </java>
   </target>
 

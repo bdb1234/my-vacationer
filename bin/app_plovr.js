@@ -1,11 +1,15 @@
-var port = 1337;
+var app = require('express').createServer();
 
-goog.require('goog.string');
+goog.require('vacationer.home.Frame');
 
-http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end(goog.string.urlEncode('sooo cools!'));
+app.get('/', function(req, res){
+    var testComponent = new vacationer.home.Frame();
+    res.send(testComponent.render());
+});
 
-}).listen(port, '127.0.0.1');
+app.get('/test', function(req, res){
+    var testComponent = new vacationer.home.Frame();
+    res.send(testComponent.render());
+});
 
-console.log('Server running locally on port ' + port);
+app.listen(3000);

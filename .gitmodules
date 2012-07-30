@@ -1,6 +1,3 @@
-[submodule "libs/google-closure-library"]
-	path = libs/google-closure-library
-	url = https://github.com/bdb1234/google-closure-library.git
 [submodule "libs/haus"]
 	path = libs/haus
 	url = https://github.com/bdb1234/haus.git
