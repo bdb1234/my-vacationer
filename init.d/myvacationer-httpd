@@ -19,8 +19,8 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 NAME=myvacationer-httpd
 DESC="myvacation HTTP server"
-RUNDIR=/var/run/myvacationer
-LOGDIR=/var/log/myvacationer
+RUNDIR=/var/run/my-vacationer
+LOGDIR=/var/log/my-vacationer
 SCRIPTNAME=/etc/init.d/$NAME
 USER=root
 GROUP=root
@@ -28,7 +28,7 @@ GROUP=root
 
 # Node.js
 MOVE_PROGRAM=/usr/local/bin/node
-MOVE_SCRIPT=/var/myvacationer/build/server.js
+MOVE_SCRIPT=/var/my-vacationer/build/server.js
 MOVE_ARGS="$MOVE_SCRIPT"
 
 # Daemon supervisor config
