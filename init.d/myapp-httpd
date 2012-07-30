@@ -28,7 +28,7 @@ GROUP=root
 
 # Node.js
 MOVE_PROGRAM=/usr/local/bin/node
-MOVE_SCRIPT=/var/myvacation/bin/app.js
+MOVE_SCRIPT=/var/myvacation/build/server.js
 MOVE_ARGS="$MOVE_SCRIPT"
 
 # Daemon supervisor config
