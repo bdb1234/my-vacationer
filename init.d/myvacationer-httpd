@@ -19,8 +19,8 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 NAME=myvacation-httpd
 DESC="myvacation HTTP server"
-RUNDIR=/var/run/myvacation
-LOGDIR=/var/log/myvacation
+RUNDIR=/var/run/myvacationer
+LOGDIR=/var/log/myvacationer
 SCRIPTNAME=/etc/init.d/$NAME
 USER=root
 GROUP=root

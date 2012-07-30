@@ -12,4 +12,4 @@ app.get('/test', function(req, res){
     res.send(testComponent.render());
 });
 
-app.listen(3000);
+app.listen(80);
